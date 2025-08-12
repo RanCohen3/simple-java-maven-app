@@ -9,7 +9,7 @@ pipeline {
                 sh 'mvn -B -DskipTests -Denforcer.skip=true -Dstyle.color=never clean package'
             }
         }
-        stage('Hello') {
+        stage('Hello GIT') {
             steps {
                 echo 'Hello from git'
             }
